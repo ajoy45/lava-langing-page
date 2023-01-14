@@ -1,0 +1,133 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans&family=Poppins&family=Roboto&family=Work+Sans:ital,wght@0,400;1,300&display=swap');
+
+/* common styles */
+* {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+:root {
+    --primary-color: #f1a416;
+}
+
+.primary-color {
+    color: #f1a416;
+}
+
+/* header styles */
+header {
+    background-image: url('../assets/images/banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top right;
+
+
+}
+
+.container {
+    width: 1240px;
+    margin: 0 auto;
+
+}
+
+/* navbar styles */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.nav .logo {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar>ul {
+    display: flex;
+}
+.dropdown li{
+    padding: 10px;
+}
+
+li .dropdown {
+    display: none;
+}
+li a i{
+    color: blue;
+    
+}
+ul li:hover .dropdown {
+    display: block;
+    position: absolute;
+    background-color: rgba(173, 216, 230, 0.363);
+}
+
+.navbar>ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.navbar>ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(15, 15, 15);
+}
+
+.nav-btn {
+    border: 0;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+/* banner styles */
+.banner {
+    margin-top: 150px;
+    width: 700px;
+}
+
+.banner-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.banner-title span {
+    color: var(--primary-color);
+}
+
+.banner-description {
+    font-size: 25px;
+    padding: 19px 50px 19px 0;
+    margin-top: 50px;
+}
+
+.banner-description span {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-btn {
+    padding: 20px 30px;
+    border: 0;
+    background-color: var(--primary-color);
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
