@@ -1,0 +1,42 @@
+/* mobile responsive */
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    /* header section */
+    header{
+        background-size:cover;
+        background-position: center;
+    }
+    .nav,
+    .navbar,
+    .navbar>ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li .dropdown {
+        display: none;
+    }
+
+    ul li:hover .dropdown {
+        display: block;
+        position: absolute;
+        background-color: rgba(173, 216, 230, 0.363);
+        right: 18px;
+    }
+    /* banner section */
+    .banner{
+       width: 100%;
+       margin-top: 20px;
+    }
+    .banner-title,.banner-description{
+        padding: 0 14px;
+    }
+    .banner-btn{
+        padding: 10px 7px;
+        font-size: 23px;
+        margin-left: 14px;
+    }
+}

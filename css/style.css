@@ -58,6 +58,10 @@ header {
 .navbar>ul {
     display: flex;
 }
+li a i{
+    color: blue;
+    
+}
 .dropdown li{
     padding: 10px;
 }
@@ -65,10 +69,7 @@ header {
 li .dropdown {
     display: none;
 }
-li a i{
-    color: blue;
-    
-}
+
 ul li:hover .dropdown {
     display: block;
     position: absolute;
@@ -129,5 +130,5 @@ ul li:hover .dropdown {
     color: white;
     border-radius: 30px;
     margin-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
