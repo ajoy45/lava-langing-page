@@ -10,11 +10,12 @@
     font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 :root {
     --primary-color: #f1a416;
+    --secondary-color:#ec8246;
 }
 
 .primary-color {
@@ -26,9 +27,7 @@ header {
     background-image: url('../assets/images/banner-bg.png');
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: top right;
-
-
+    background-position:top right;
 }
 
 .container {
@@ -131,4 +130,39 @@ ul li:hover .dropdown {
     border-radius: 30px;
     margin-top: 20px;
     margin-bottom: 40px;
+}
+/* services style */
+.services{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 100px;
+    column-gap: 30px;
+    margin-bottom: 50px;
+    
+}
+.service{
+    text-align: center;
+    box-shadow:3px 3px 9px;
+    padding: 40px;
+    border-radius: 25px;
+    
+}
+.service img{
+    margin-bottom: 30px;
+}
+.service h2{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.service p{
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+.service button{
+    border: 0;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+    color: white;
 }
