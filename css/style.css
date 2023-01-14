@@ -12,7 +12,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.hide{
+    display: none;
+}
 :root {
     --primary-color: #f1a416;
     --secondary-color:#ec8246;
@@ -165,4 +167,27 @@ ul li:hover .dropdown {
     border-radius: 20px;
     background-color: var(--secondary-color);
     color: white;
+}
+/* about section styles */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 220px;
+    column-gap: 109px;
+}
+.about-detail{
+    display: flex;
+    column-gap: 20px;
+}
+.description h2{
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.description p{
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 20px;
 }
