@@ -104,6 +104,7 @@ ul li:hover .dropdown {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 45px;
+    text-shadow: 2px 2px 2px orangered;
 }
 
 .banner-title span {
@@ -190,4 +191,33 @@ ul li:hover .dropdown {
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 20px;
+}
+/* about us section style */
+.about-us{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.about-lava{
+    margin: 0 auto;
+    text-align: center;
+}
+.about-lava h2{
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px orangered;
+    margin-bottom: 20px;
+}
+.about-lava p{
+    font-size: 25px;
+    padding: 17px;
+}
+.persons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 35px;
+}
+.person1{
+    text-align: center;
+    background: linear-gradient(#ed7d4b,#ea6d5b);
 }
