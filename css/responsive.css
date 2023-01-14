@@ -5,19 +5,16 @@
     }
 
     /* header section */
-   header{
-    background-size: cover;
-    background-position:top right;
-   }
+    header {
+        background-size: cover;
+        background-position: top right;
+    }
+
     .nav,
     .navbar,
     .navbar>ul {
         flex-direction: column;
         align-items: center;
-    }
-
-    li .dropdown {
-        display: none;
     }
 
     ul li:hover .dropdown {
@@ -26,45 +23,88 @@
         background-color: rgba(173, 216, 230, 0.363);
         right: 18px;
     }
+
     /* banner section */
-    .banner{
-       width: 100%;
-       margin-top: 20px;
+    .banner {
+        width: 100%;
+        margin-top: 20px;
     }
-    .banner-title,.banner-description{
+
+    .banner-title,
+    .banner-description {
         padding: 0 14px;
     }
-    .banner-btn{
+
+    .banner-btn {
         padding: 10px 7px;
         font-size: 23px;
         margin-left: 14px;
     }
+
     /* service section */
-    .services{
-        grid-template-columns: repeat(1,1fr);
+    .services {
+        grid-template-columns: repeat(1, 1fr);
         justify-items: center;
         row-gap: 20px;
     }
-    .service{
+
+    .service {
         width: 85%;
     }
+
+    /* about section responsive */
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about-img img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .about-detail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description {
+        text-align: center;
+    }
 }
+
 /* tablet device responsive */
 @media only screen and (min-width:689px) and (max-width:1024px) {
     .container {
         width: 100%;
     }
-    .banner{
-       margin: 0 auto;   
-     
-     }
-     .services{
-        grid-template-columns: repeat(2,1fr);
+
+    .banner {
+        margin: 0 auto;
+
+    }
+
+    .services {
+        grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         justify-content: center;
         row-gap: 20px;
-     }
-     .service{
+    }
+
+    .service {
         width: 85%;
+    }
+
+    /* about section responsive */
+    .about {
+        flex-direction: column;
+    }
+
+    .about-detail {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .description{
+        text-align: center;
     }
 }
