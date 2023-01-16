@@ -193,8 +193,14 @@ ul li:hover .dropdown {
     margin-bottom: 20px;
 }
 /* about us section style */
+.about-container{
+    background-image: url('../assets/images/left-bg-decor.png'),url('../assets/images/right-bg-decor.png');
+    background-repeat: no-repeat;
+    background-position: 0 0,right bottom;
+    
+}
 .about-us{
-    margin-top: 50px;
+    margin-top: 150px;
     margin-bottom: 50px;
 }
 .about-lava{
@@ -215,9 +221,31 @@ ul li:hover .dropdown {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 35px;
+    column-gap: 130px;
 }
 .person1{
     text-align: center;
-    background: linear-gradient(#ed7d4b,#ea6d5b);
+    background: linear-gradient(90deg,#ed7d4b,#ea6d5b);
+    position: relative;
+    margin-top: 100px;
+}
+.person1-img{
+    position: absolute;
+    top: -74px;
+    left: -80px;
+}
+.person1>ul>i{
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.person1 h2{
+    font-size: 45px;
+    color: white;
+    margin-bottom: 30px;
+}
+.person1 p{
+    font-size: 18px;
+    color: white;
+    padding: 20px 30px;
 }

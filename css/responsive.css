@@ -12,7 +12,7 @@
 
     .nav,
     .navbar,
-    .navbar>ul {
+    .navbar>ul,.persons {
         flex-direction: column;
         align-items: center;
     }
@@ -71,6 +71,9 @@
     .description {
         text-align: center;
     }
+    .person1-img{
+        left: 0px;
+    }
 }
 
 /* tablet device responsive */
@@ -96,7 +99,7 @@
     }
 
     /* about section responsive */
-    .about {
+    .about,.persons{
         flex-direction: column;
     }
 
@@ -106,5 +109,8 @@
     }
     .description{
         text-align: center;
+    }
+    .person1-img{
+        left: 0px;
     }
 }
