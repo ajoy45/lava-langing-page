@@ -1,6 +1,6 @@
 /* mobile responsive */
 @media only screen and (max-width:688px) {
-    .container {
+    .container,.footer-form,.footer-details{
         width: 100%;
     }
 
@@ -12,7 +12,7 @@
 
     .nav,
     .navbar,
-    .navbar>ul,.persons {
+    .navbar>ul,.persons,.footer-container{
         flex-direction: column;
         align-items: center;
     }
@@ -73,6 +73,16 @@
     }
     .person1-img{
         left: 0px;
+    }
+    /* footer section */
+    .footer-form{
+        padding:10px;
+    }
+    .form-btn{
+        padding: 20px 0;
+    }
+    input[type='text'],input[type='email'],textarea{
+        width: 100%;
     }
 }
 
